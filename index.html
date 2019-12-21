@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Task manager</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<body>
+
+  <header>
+    <h1 class="title">Task manager</h1>
+  </header>
+
+  <main>
+
+    <div class="lists">
+
+      <section class="column list">
+        <header>
+          <h3>New tasks</h3>
+          <button>
+                        <span class="oi oi-chevron-top"></span>
+                    </button>
+        </header>
+
+        <input type="text" placeholder="Add new card">
+
+        <div id="sortable1" class="list-body">
+          <div class="kanban-card">
+            <button>
+                            <span class="oi oi-x"></span>
+                        </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="column list">
+        <header>
+          <h3>Current tasks</h3>
+        </header>
+        <div id="sortable2" class="list-body"></div>
+      </section>
+
+      <section class="column list">
+        <header>
+          <h3>Done tasks</h3>
+        </header>
+        <div id="sortable3" class="list-body"></div>
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
